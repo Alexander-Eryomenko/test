@@ -1,0 +1,49 @@
+.logo {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  &__main-text {
+    font-size: 35px;
+    -webkit-text-stroke: 1px #000;
+    &_animation {
+      animation: color-for-title  3s 1 ease-in-out;
+    }
+  }
+  &__sub-text {
+    font-size: 10px;
+    color: #000;
+  }
+}
+
+@keyframes color-for-title {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@media (max-width: 1025px) {
+  .logo__main-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    top: 17px;
+  }
+  .logo__main-text {
+    font-size: 20px;
+  }
+  .logo__sub-text {
+    font-size: 5px;
+  }
+}

@@ -1,0 +1,37 @@
+.link-left, .link-right, .link-bottom {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 16px;
+  color: #373737;
+}
+
+.link-left {
+  top: 50%;
+  transform: rotate(-180deg) translateY(50%);
+  left: 19px;
+  writing-mode: vertical-rl;
+}
+
+.link-right {
+  top: 50%;
+  right: 19px;
+  writing-mode: vertical-rl;
+}
+
+.link-bottom {
+  bottom: 10px;
+  left: 50%;
+}
+
+@media (max-width: 1025px) {
+  .link-left, .link-right, .link-bottom {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .link-left, .link-right, .link-bottom {
+    display: none;
+  }
+}

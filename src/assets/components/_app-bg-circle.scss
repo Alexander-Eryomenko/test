@@ -1,0 +1,21 @@
+.app-bg-circle {
+  width: 578px;
+  height: 578px;
+  background-color: #FFCB46;
+  border-radius: 50%;
+  filter: blur(38px);
+}
+
+@media (max-width: 1025px) {
+  .app-bg-circle {
+    width: 482px;
+    height: 482px;
+  }
+}
+
+@media (max-width: 767px) {
+  .app-bg-circle {
+    width: 294px;
+    height: 294px;
+  }
+}

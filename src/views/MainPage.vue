@@ -1,6 +1,12 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
+  <div>
+    <MobileMenu />
+    <LanguageSelect />
+    <AppHeader />
+    <AppMain />
+    <AppLink textLink="where" className="link-left" />
+    <AppLink textLink="what" className="link-right"/>
+    <AppLink textLink="who" className="link-bottom"/>
   </div>
 </template>
 
@@ -9,26 +15,21 @@ import AppHeader from "@/components/AppHeader";
 import AppMain from "@/components/AppMain";
 import LanguageSelect from "@/components/LanguageSelect";
 import AppLink from "@/components/AppLink";
+import MobileMenu from "@/components/MobileMenu";
 
 export default {
-  name: "App",
+  name: "MainPage",
   components: {
     AppHeader,
     AppMain,
     LanguageSelect,
-    AppLink
+    AppLink,
+    MobileMenu
   }
 }
 </script>
 
 <style lang="scss">
-@keyframes router  {
-  0% {
-    background-color: red;
-  }
-  100% {
-    background-color: transparent;
-  }
-}
+
 
 </style>

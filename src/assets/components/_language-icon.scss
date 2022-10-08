@@ -1,0 +1,84 @@
+.language-icon {
+  position: relative;
+  top: 28px;
+  left: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+    &__img {
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 21px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}
+
+.elem-language {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 38px;
+  border-radius: 15px;
+  background-color: #FFCB46;
+  animation: showLanguageBox 0.3s linear 1;
+    div {
+      color: #373737;
+      animation: showLanguage 0.5s linear 1;
+      cursor: pointer;
+      transition: color 0.3s linear;
+      &:hover {
+        color: #fff
+      }
+    }
+}
+
+.show-language {
+  display: flex;
+}
+
+//animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction
+
+@keyframes showLanguageBox  {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes showLanguage  {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

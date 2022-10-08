@@ -1,0 +1,42 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Grtsk Giga';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #373737;
+    width: 1023px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .main__title {
+    font-size: 58px;
+    width: 724px;
+  }
+}
+
+@media (max-width: 769px) {
+  .main__title {
+    width: 568px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__title {
+    width: 333px;
+    font-size: 34px;
+  }
+}

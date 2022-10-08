@@ -1,0 +1,15 @@
+@import "./reset";
+//@import "../fonts/fonstsGrtskGiga.css";
+
+#app {
+  font-family: 'Grtsk Giga';
+}
+
+
+@import "./components/app";
+@import "./components/logo.scss";
+@import "components/main-title";
+@import "./components/app-bg-circle";
+@import "./components/language-icon";
+@import "./components/app-link";
+@import "./components/mobile-menu.scss";
